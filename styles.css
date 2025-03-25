@@ -65,26 +65,16 @@
 /* Steps Section */
 .steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3列に設定 */
-    gap: 20px; /* 画像間の隙間 */
-    text-align: center;
-    width: 100%; /* 幅を100%にして、親要素に合わせる */
-    max-width: 900px; /* 最大幅を設定、必要に応じて調整 */
-    margin: 0 auto; /* 中央揃え */
-}
-
-.steps .step {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* 3列 */
+    grid-template-rows: repeat(2, auto); /* 2行 */
+    gap: 20px; /* 各ステップの間に余白を作る */
     text-align: center;
 }
 
-.steps .step img {
-    width: 100%; /* 親要素の幅に合わせる */
-    height: 300px; /* 統一した高さ */
-    object-fit: cover; /* 画像が枠に収まるように調整 */
+.step img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
