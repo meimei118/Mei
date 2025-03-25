@@ -63,11 +63,18 @@
 }
 
 /* Steps Section */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列に設定 */
+    gap: 20px; /* 画像間の隙間 */
+    text-align: center;
+}
+
 .steps .step {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 中央揃え */
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
